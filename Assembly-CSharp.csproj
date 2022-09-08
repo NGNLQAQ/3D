@@ -48,15 +48,15 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\_DarkSouls_Resources\Scenes\Toon FX StarFog\Scripts\ETFXPitchRandomizer.cs" />
-     <Compile Include="Assets\Scripts\PlayerManager.cs" />
      <Compile Include="Assets\_DarkSouls_Resources\Scenes\Toon FX StarFog\Scripts\ETFXLightFade.cs" />
      <Compile Include="Assets\Scripts\PlayerLocomotion.cs" />
-     <Compile Include="Assets\Scripts\AnimatorHandler.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\InputHandler.cs" />
      <Compile Include="Assets\Scripts\CameraHandler.cs" />
      <Compile Include="Assets\Scripts\ResetAnimation.cs" />
      <Compile Include="Assets\_DarkSouls_Resources\Scenes\Toon FX StarFog\Scripts\ETFXRotation.cs" />
+     <Compile Include="Assets\Scripts\PlayerManager.cs" />
+     <Compile Include="Assets\Scripts\AnimatorHandler.cs" />
      <None Include="Assets\_DarkSouls_Resources\Scenes\FireAndSmoke\ScriptsAndShaders\Particles_Lit_Emissive.shader" />
      <None Include="Assets\_DarkSouls_Resources\NPC\Shaders\POLYGON_CustomCharacters.shader" />
  <Reference Include="UnityEngine">
@@ -644,14 +644,14 @@
  <Reference Include="Unity.TextMeshPro">
  <HintPath>D:/RIT/Soul-Like/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>D:/RIT/Soul-Like/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.InputSystem">
  <HintPath>D:/RIT/Soul-Like/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>D:/RIT/Soul-Like/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>D:/RIT/Soul-Like/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/RIT/Soul-Like/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
