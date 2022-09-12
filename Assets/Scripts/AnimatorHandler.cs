@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AnimatorHandler : MonoBehaviour
 {
+    public PlayerManager playerManager;
     public Animator anime;
     public InputHandler inputHandler;
     public PlayerLocomotion playerLocomotion;
@@ -13,6 +14,7 @@ public class AnimatorHandler : MonoBehaviour
 
     public void Initialzie()
     {
+        playerManager = GetComponentInParent<PlayerManager>();
         anime = GetComponent<Animator>();
         vertical = Animator.StringToHash("Vertical");
         horizontal = Animator.StringToHash("Horizontal");
@@ -93,7 +95,7 @@ public class AnimatorHandler : MonoBehaviour
 
     private void OnAnimatorMove()
     {
-        if (!inputHandler.isInteracting)
+        if (!playerManager.isInteracting)
             return;
 
         float delta = Time.deltaTime;

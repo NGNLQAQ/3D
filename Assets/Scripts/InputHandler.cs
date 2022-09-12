@@ -14,7 +14,6 @@ public class InputHandler : MonoBehaviour
     public bool roll;
     public bool sprint;
     public float rollTimer;
-    public bool isInteracting;
 
 
     PlayerController input;
@@ -25,16 +24,7 @@ public class InputHandler : MonoBehaviour
     {
         cameraHandler = CameraHandler.singleton;
     }
-    private void FixedUpdate()
-    {
-        float delta = Time.deltaTime;
-        
-        if(cameraHandler != null)
-        {
-            cameraHandler.Follow(delta);
-            cameraHandler.Rotation(delta, mouseX, mouseY);
-        }
-    }
+
     public void OnEnable()
     {
         if (input == null)
@@ -74,7 +64,10 @@ public class InputHandler : MonoBehaviour
         if(b_Input)
         {
             rollTimer += delta;
-            sprint = true;
+            if (movementInput != Vector2.zero)
+                sprint = true;
+            else
+                sprint = false;
         }
         else
         {
